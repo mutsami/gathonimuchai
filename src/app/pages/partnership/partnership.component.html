@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+<div class="container" style="margin-bottom: 5%;">
+ 
+    <div class="row" style="margin-top: 4%;">
+        <div class="col-sm-6">
+            <div>
+                <h1 class="title">Work with us</h1>
+                <h5 class="subtitle" style="font-size: 12px;">Join our partner programs</h5>
+                <p><small style="font-size: 11px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, explicabo. Rem incidunt, laborum quae ipsam inventore eveniet nisi quam at vitae odit reiciendis dolores nihil libero est sit excepturi illum?</small></p>
+    
+                <div>
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form4Example1" class="form-control form-control-sm" />
+                          <label class="form-label" for="form4Example1">Name</label>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form4Example2" class="form-control form-control-sm" />
+                          <label class="form-label" for="form4Example2">Email address</label>
+                        </div>
+                      
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                          <textarea class="form-control form-control-sm" id="form4Example3" rows="4"></textarea>
+                          <label class="form-label" for="form4Example3">Message</label>
+                        </div> 
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn shadow-0">Submit message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <p class="title">Choose your industry</p> 
+                <div class="col-sm-6">
+                    <a (click)="industryclick($event)">
+                        <div class="tile" id="1" >
+                                <div class="subtitle" style="border-radius:1%;position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                padding: 3.5%;background-color: var(--light);
+                                width: fit-content;
+                                    "> 
+                                    <small class="title" style="text-transform: capitalize;margin-bottom: 0%;">Mining & earth <br> resources industry</small>      
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a (click)="industryclick($event)">
+                        <div class="tile1" id="2" >
+                            <div class="subtitle" style="border-radius:1%;position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 3.5%;background-color: var(--light);
+                            width: fit-content;
+                                "> 
+                                <small class="title" style="text-transform: capitalize; margin-bottom: 0%;">Commercial real estate</small>         
+                            </div>
+                        </div>
+                    </a>
+                    <a (click)="industryclick($event)"  >
+                        <div class="tile2" id="3">
+                            <div class="subtitle" style="border-radius:1%;position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 3.5%;background-color: var(--light);
+                            width: fit-content;
+                                "> 
+                                <small class="title" style="text-transform: capitalize; margin-bottom: 0%;">Retail business</small>
+                    
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

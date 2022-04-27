@@ -1,0 +1,60 @@
+<div class="container">
+    <nav style="padding-top: 5%;" class="navbar navbar-expand-lg navbar-inverse navbar-light transparent shadow-0">
+        <!-- Container wrapper -->
+        <div  class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2 bounce-top" [routerLink]= "['/']">
+                <h4 class="subTitle nav-item" style="font-weight: lighter;letter-spacing: 2px;margin-bottom: 0%;">Gathoni<span class="title" style="letter-spacing: 0px;">muchai</span> </h4>
+            </a>
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]= "['/']" >Home</a>
+            </li>          
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]= "['/about']" >About us</a>
+                </li>                      
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]= "['/portfolio']">Our portfolio</a>
+                </li>    
+              <li class="nav-item">
+                <a class="nav-link"  [routerLink]= "['/partnership']">Partner program</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link"  [routerLink]= "['/careers']">Careers</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link"  [routerLink]= "['/blog']">Blog</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link"  [routerLink]= "['/contact']">Contact</a>
+              </li> 
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link" href='#search'>Search</a>
+              </li>   -->
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav> 
+</div>
