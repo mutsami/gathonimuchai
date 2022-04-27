@@ -1,0 +1,18 @@
+<div class="side-nav">
+    <a class="logo navbar-brand me-2 bounce-top" [routerLink]= "['/']">
+        <small class="subTitle nav-item" style="font-weight: lighter;letter-spacing: 2px;margin-bottom: 0%;">Gathoni<span class="title" style="letter-spacing: 0px;">muchai</span> </small>
+    </a>
+    <a class="logo-mini navbar-brand me-2 bounce-top" [routerLink]= "['/']">
+        <h1 class="title nav-item" style="font-weight: lighter;letter-spacing: 2px;margin-bottom: 0%;">GM</h1>
+    </a>
+    <p class="title"></p>
+    <ul class="nav-links">
+        <li><a [routerLink]="['/admin']"><i class="fa-solid fa-house-chimney-window"></i><p>Dashboard</p></a></li>
+        <li><a [routerLink]="['/admin/message']"><i class="fa-solid fa-message"></i><p>Messages</p></a></li>
+        <li><a [routerLink]="['/admin/partnerships']"><i class="fa-solid fa-handshake"></i><p>Partnerships</p></a></li>
+        <li><a [routerLink]="['/admin/careers']"><i class="fas fa-suitcase"></i><p>Careers</p></a></li>
+        <li><a [routerLink]="['/admin/team']"><i class="fa-solid fa-users"></i><p>Team</p></a></li>
+        <li><a [routerLink]="['/admin/blog']"><i class="fa-solid fa-blog"></i><p>Blog</p></a></li> 
+        <li><a  (click)="auth.signOut()" style="cursor: pointer;" ><i class="fas fa-sign-out"></i><p>Sign out</p></a></li>
+    </ul> 
+</div>

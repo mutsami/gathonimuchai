@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { AuthguardGuard } from './services/authguard.guard';
 
 const routes: Routes = [{path:"",component:HomeComponent}
 ,
@@ -27,11 +28,19 @@ const routes: Routes = [{path:"",component:HomeComponent}
 {
   path: 'contact',
   loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule)
+},
+{
+  path: 'profile',
+  loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
+},
+{
+  path: 'admin',
+  loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) 
 }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

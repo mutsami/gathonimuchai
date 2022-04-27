@@ -1,12 +1,36 @@
 <app-navbar></app-navbar>
-<div class="row" style="margin-top: 6%;">
+<div class="row margin-top" style="margin-top: 6%;">
     <div class="col-sm-2"></div>
-    <div class="col-sm-8" style="text-align: center;">
+    <div class="col-sm-8" style="text-align: center;margin-bottom: 5%;">
         <h1 class="title" >Join us at Gathoni Muchai!</h1>
-        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum animi optio porro velit a recusandae quidem nulla voluptatibus omnis dolor incidunt nisi quia, officia odit provident ipsa aliquam repellat!</small></p>
-        <div style="margin-top: 5%;margin-bottom: 5%;">
+        <p class="margin-top"><small>We provide a growth-oriented environment in which you will be exposed to a wealth of market knowledge and contacts with a diverse group of skilled individuals.</small></p>
+    
+        <div class="margin-top" *ngIf="!careers" style="margin-top: 5%;margin-bottom: 5%;">
             <p class="subtitle">No openings at the moment</p>
             <img src="./../../../assets/undraw_no_data_re_kwbl.svg" style="height: 30vh;" alt="">
+        </div>
+
+        <div *ngIf="careers" class="row" style="max-height: 80vh;  overflow-y: auto;margin-top: 5%;"> 
+            <a class="margin-top"  *ngFor="let member of careers" class="col-sm-12" style=" border-radius: 4px; color: var(--dark);margin-top: 1%; padding: 2%; border: 1px solid rgb(228, 226, 226); ">
+                 <div class="row" >
+                     <div class="col-sm-5">
+                        <h2 class="subtitle" style="font-weight: bold;margin-bottom: 0;margin-bottom: 0;">{{member.title}}</h2>
+                        <p class="subtitle" style="margin-bottom: 0%;"><span style=" color: var(--medium);margin-bottom: 0;">{{getDept(member.department)}} department</span></p>
+                     </div>
+                     <div class="col-sm-3">
+                         <p style="margin-bottom: 0%;">{{member.uploaded.toDate()  | date  }}</p>
+                         <p style="margin-bottom: 0%;"><small style="font-size: 11px;color: lightgray;">{{member.uploaded.toDate()  | timeago  }}</small></p>
+                    </div>
+
+                     <div class="col-sm-3">
+                        <span class="badge bg-custom">{{member.nature == '1' ? 'Full-time' : 'part-time'}}</span>
+                        &nbsp;
+                        <span class="badge bg-custom"> {{member.location}} </span>
+                     </div>
+                     <div class="col-sm-1" style="text-align:left">
+                      </div>
+                 </div>    
+            </a> 
         </div>
     </div>
     <div class="col-sm-2"></div>

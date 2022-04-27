@@ -1,52 +1,65 @@
 <app-navbar></app-navbar>
-<div class="row" style="margin-top: 6%;margin-bottom: 6%;">
+<div class="row " style="margin-top: 6%;margin-bottom: 6%;">
     <div class="col-sm-1"></div>
     <div class="col-sm-5">
-        <div>
+        <div class="margin-top" >
             <h1 class="title">Get in touch</h1>
-            <p>Have an inquiry or some feedback for us? <br>
+            <p class="margin-top">Have an inquiry or some feedback for us? <br>
             Fill out the form below to contact our team.
             </p>
-            <div>
-                <form>
+            <div class="margin-top">
+              <form  [formGroup]="form" (ngSubmit)="submit()">
                     <!-- Name input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form4Example1" class="form-control form-control-sm" />
-                      <label class="form-label" for="form4Example1">Name</label>
+                      <input type="text" formControlName="name" id="form4Example1" class="form-control form-control-sm" />
+                      <label class="form-label" for="name">Name</label>
+                      <div *ngIf="f['name'].touched && f['name'].invalid" style="color: var(--medium);">
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']" > <small>** Name is required.</small> </div> 
+                      </div>
                     </div>
                   
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form4Example2" class="form-control form-control-sm" />
-                      <label class="form-label" for="form4Example2">Email address</label>
-                    </div>
+                    
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input type="email" formControlName="email" id="form5Example2" class="form-control  form-control-sm" />
+                        <label class="form-label" for="email">Email address</label>
+                        <div *ngIf="f['email'].touched && f['email'].invalid" style="color: var(--medium);">
+                          <div *ngIf="f['email'].errors && f['email'].errors['required']" > <small>** Email is required.</small> </div>
+                          <div *ngIf="f['email'].errors && f['email'].errors['email']" > <small>** Make sure the Email is in the correct format.</small> </div>
+          
+                      </div>
+                      </div>   
                   
                     <!-- Message input -->
                     <div class="form-outline mb-4">
-                      <textarea class="form-control form-control-sm" id="form4Example3" rows="4"></textarea>
-                      <label class="form-label" for="form4Example3">Message</label>
+                      <textarea formControlName="message" class="form-control form-control-sm" id="form4Example3" rows="4"></textarea>
+                      <label class="form-label" for="message">Message</label>
+                      <div *ngIf="f['message'].touched && f['message'].invalid" style="color: var(--medium);">
+                        <div *ngIf="f['message'].errors && f['message'].errors['required']" > <small>** Message is required.</small> </div>
+        
+                    </div>
                     </div> 
                   
                     <!-- Submit button -->
-                    <button type="submit" class="btn shadow-0">Submit message</button>
+                    <button class="btn btn-custom shadow-0"  [disabled]="form.invalid" type="submit">Submit message</button>
                 </form>
             </div>
         </div>
     </div>
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
-        <div class="row">
+        <div class="row margin-top" >
             <div class="col-sm-12">
-              <h2 class="title">+254 (712) 345-678</h2>
-                <h5 class="title">info@gathonimuchai.com</h5>
+              <h2 class="title">+254 (714) 928-820</h2>
+                <h6 class="title ">info@gathonimuchaiinvestments.com</h6>
                 <small style="color: grey">2nd floor, <br> Crawford Business Park, <br> Statehouse Rd, <br> Nairobi, KE.</small>
             
                   <div class="effect jaques"> 
                     <div class="buttons">
-                      <a href="#" class="fb" title="Join us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                      <a href="#" class="tw" title="Join us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                      <a href="#" class="insta" title="Join us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                      <a href="#" class="in" title="Join us on Linked In"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                      <!-- <a href="#" class="fb" title="Join us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> -->
+                      <a href="https://twitter.com/GM_InvestAfrica?s=20&t=uCCSkSB1nKz8tf98AJkBQg" class="tw" title="Join us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com/gm_investafrica/" class="insta" title="Join us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/company/gathoni-muchai-investments-limited/" class="in" title="Join us on Linked In"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                   </div>
             

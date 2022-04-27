@@ -1,0 +1,12 @@
+.btn-custom{
+    margin-right: 2%;
+}
+ 
+.innerhtml{
+    height: 100%; max-width:800px; overflow: auto;
+}
+.innerhtml p img{
+    width: 100px!important;
+}
+
+ 

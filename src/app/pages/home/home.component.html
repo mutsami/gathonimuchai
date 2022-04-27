@@ -6,23 +6,23 @@
     <input placeholder="type here" id="searchbox" type="search"/>
 </div>
    
-<div class="start" style="height: 80vh;">
+<div class="start">
 <app-navbar></app-navbar>
   <div style="margin-top: 4%; padding: 4%;">
         <div class="row">
             <div class="col-sm-1">
-                <h3 class="bottoms-up ban subtitle" style=" color: var(--dark)!important; font-size: 10px;">info@gathonimuchai.co.ke</h3>
+                <h3 class="bottoms-up ban subtitle" style=" color: var(--dark)!important; font-size: 10px;">info@gathonimuchaiinvestments.com</h3>
             </div>
             <div class="col-sm-9"> 
-                <div class="tracking-in-expand">
-                    <h1 class="subtitle tracking-in-expand " style="font-size:1em;color: var(--medium);">Welcome to Gathoni Muchai Investments 
+                <div class="tracking-in-expand margin-top">
+                    <h1 class="subtitle tracking-in-expand  " style="font-size:1em;color: var(--medium);">Welcome to Gathoni Muchai Investments 
                     </h1> 
-                    <h1 class="title " style="font-size:3em;color: var(--dark);"> 
-                        Making <span id="adjectives"></span> investments across East Africa
+                    <h1 class="title margin-top smallFont" style="font-size:3em;color: var(--dark);"> 
+                        Making <span id="adjectives"></span>  investments across East Africa
                     </h1>  
                 </div>                     
                 
-                <p class="tracking-in-expand"><small><a class="links" href="" >Explore more</a></small></p>
+                <p class="tracking-in-expand"><small><a class="links" (click)="scroll(target)" >Explore more</a></small></p>
             </div>
             <div class="col-sm-2"> 
             </div>
@@ -71,71 +71,72 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 <!-- <div class="banner"></div> -->
-<div class="container">
-<div style="margin-top: 10em;margin-bottom: 10em;">
-    <div class="row">
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-10"> 
-            <h1 class="subtitle" style="font-size:1em;color: var(--medium);">What we do
-            </h1> 
-            <h1 class="title" style="font-size:3em;color: var(--dark);"> 
-               Generating wealth for forward minded, accredited investors
-            </h1>
-            <p><small style="font-size: 12px;letter-spacing: 1px;">We are a Nairobi-based investment firm that is focused on maximising returns for our esteemed investors through the various industries that we invest in across the larger East African region</small></p>
+<div #target class="container" style="padding-top: 8%;">
+    <div >
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10"> 
+                <h1 class="subtitle margin-top" style="font-size:1em;color: var(--medium);">What we do
+                </h1> 
+                <h1 class="title smallFont" style="font-size:3em;color: var(--dark);"> 
+                Generating wealth for forward minded, accredited investors
+                
+                </h1>
+                <p class="margin-top"><span style="letter-spacing: 1px;">We are a Nairobi-based investment firm that is focused on maximising returns for our esteemed investors through the various industries that we invest in across the larger East African region</span></p>
 
-            <div class="row" style="margin-top: 4em;">
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="vertcent">
-                                <h1 class="title bigNumbers " style="color: var(--medium)!important;" >04</h1>
+                <div class="row" style="margin-top: 4em;">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="vertcent">
+                                    <h1 class="title bigNumbers " style="color: var(--medium)!important;" >04</h1>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="vertcent">
-                                <small style="font-size: 12px;">We have interests in 4 East African countries; Kenya, Uganda, Tanzania, Ethiopia </small>
+                            <div class="col-sm-8">
+                                <div class="vertcent">
+                                    <p >We have interests in 4 East African countries; Kenya, Uganda, Tanzania, Ethiopia </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="vertcent">
-                                <h1 class="title bigNumbers " style="color: var(--medium)!important;" >03</h1>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="vertcent">
+                                    <h1 class="title bigNumbers " style="color: var(--medium)!important;" >03</h1>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="vertcent">
-                                <small style="font-size: 12px;">We are involved in 3 primary industries; real estate, mining & retail business </small>
+                            <div class="col-sm-8">
+                                <div class="vertcent">
+                                    <p class="margin-top" >We are involved in 3 primary industries; property development, mining & retail business </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-1"> 
+            <div class="col-sm-1"> 
+            </div>
         </div>
     </div>
 </div>
-</div>
 
 <div class="container" style="margin-top: 10em;">
-<h1 class="title" style="font-size:3em;color: var(--dark);"> 
+<h1 class="title smallFont" style="font-size:3em;color: var(--dark);"> 
     Industries that we're invested in
  </h1>
- <p><small style="font-size: 12px;letter-spacing: 1px;">Scroll across the list of sectors and industries that we are involved in</small></p>
+ <p><small style=" letter-spacing: 1px;">Scroll across the list of sectors and industries that we are involved in</small></p>
 </div>
 
 <div class="horizontal-scroll" style="margin-bottom: 6em;"> 
-    <a href="#"><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Commercial real estate</p><img src="./../../../assets/pexels-maria-sofia-3070575.jpg" height="200px"></div></a>
-    <a href="#"><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Residencial real estate</p><img src="./../../../assets/pexels-pixabay-259950.jpg" height="200px"></div></a>
-    <a href="#"><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Retail business</p><img src="./../../../assets/pexels-christina-morillo-1181304.jpg" height="200px"></div></a>
-    <a href="#"><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Mining</p><img src="./../../../assets/pexels-pixabay-461789.jpg" height="200px"></div></a>
-    <a href="#"><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Equities</p><img src="./../../../assets/pexels-artem-podrez-5716001.jpg" height="200px"></div></a>
+    <a><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Commercial real estate</p><img src="./../../../assets/pexels-maria-sofia-3070575.jpg" height="200px"></div></a>
+    <a><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Residencial real estate</p><img src="./../../../assets/pexels-pixabay-259950.jpg" height="200px"></div></a>
+    <a><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Retail business</p><img src="./../../../assets/pexels-christina-morillo-1181304.jpg" height="200px"></div></a>
+    <a><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Mining</p><img src="./../../../assets/pexels-pixabay-461789.jpg" height="200px"></div></a>
+    <a><div class="hscroll"><p class="subtitle" style="font-weight: bold; color: var(--medium);">Equities</p><img src="./../../../assets/pexels-artem-podrez-5716001.jpg" height="200px"></div></a>
 </div> 
 
 <div class="row">
@@ -143,15 +144,15 @@
 <div class="col-sm-8"> 
     <div class="row">
         <div class="col-sm-9">
-            <h1 class="title" style="font-size:2.5em;color: var(--dark);"> 
-                Dedicated teams <br>  for your dedicated dreams  
+            <h1 class="title smallFont" style="font-size:2.5em;color: var(--dark);"> 
+                A devoted team <br>  for your dedicated dreams  
              </h1>
         </div>
         <div class="col-sm-3"></div>
     </div>
     <div class="row">
         <div class="col-sm-12"> 
-             <p><small style="font-size: 12px;letter-spacing: 1px;">We are a closely-knit team of individuals, competent in our sectors of specialization, who bring our experience and expertise together, enabling us to profit from a decade of financial and investment knowledge.</small></p>
+             <p><small style=" letter-spacing: 1px;">We are a closely-knit team of individuals, competent in our sectors of specialization, who bring our experience and expertise together, enabling us to profit from a decade of financial and investment knowledge.</small></p>
         </div> 
     </div>
     <div class="mosaics" style="margin-top:8%;">
@@ -170,7 +171,7 @@
     </div> 
     <div class="row" style="margin-top:8%;">
         <div class="col-sm-9">
-            <p class="subtitle" style="color: var(--dark);"> 
+            <p class="subtitle margin-top-max" style="color: var(--dark);"> 
                Management team  
              </p>
         </div>
@@ -178,83 +179,27 @@
     </div>
     <div class="row">
         <div class="col-sm-12"> 
-             <p><small style="font-size: 12px;letter-spacing: 1px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci vel natus repudiandae tempora dolorem optio maxime itaque deleniti blanditiis exercitationem facere, libero quod quis officia fugiat impedit, ullam maiores quibusdam.</small></p>
+             <p><small style=" letter-spacing: 1px;">.</small></p>
         </div> 
     </div>
-    <div class="row" style="margin-top:8%;">
-        <div class="col-sm-4">
-            <a href="" style="color: var(--dark);">
-                <img class="mosimage" src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" />
-                <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;">Karan Singh</h2>
-                <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Managing Director </p> 
+    <div class="row margin-top" style="margin-top:4%;">
+        <div *ngFor="let member of team" class="col-sm-4">
+            <a style="color: var(--dark);">
+                <img [src]="member.photoURL" style="display: block;
+                            object-fit: cover; 
+                            width: 100%;
+                            height: 50vh;" />
+                            
+                            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;">{{member.name}}</h2>
+                            <p style=" letter-spacing: 1px;color: var(--medium);">{{member.title}}</p>
             </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://image.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Financial Officer</p>
-        </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Information Officer</p>
-        </a>
-        </div>
-    </div>
-    <div class="row" style="margin-top:8%;">
-        <div class="col-sm-4">
-            <a href="">
-                <img class="mosimage" src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" />
-                <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-                <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Information Officer</p>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Managing Director </p> 
-        </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://image.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Financial Officer</p>
-        </a>
-        </div>
-    </div>
-    <div class="row" style="margin-top:8%;margin-bottom:8%;">
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://image.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Financial Officer</p>
-        </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://image.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Information Officer</p>
-        </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="">
-            <img class="mosimage" src="https://img.freepik.com/free-photo/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign_273609-30676.jpg?size=626&ext=jpg" />
-            <h2 class="subtitle" style="margin-top: 4%;font-weight: bold;color: var(--dark);">Karan Singh</h2>
-            <p style="font-size: 12px;letter-spacing: 1px;color: var(--medium);">Managing Director </p> 
-        </a>
-        </div>
-    </div>
+        </div> 
+    </div> 
 </div>
 <div class="col-sm-2"></div>
 </div>
-<div class="container">
-    <div class="row" style="margin-top:8%;">
+<div class="container" style="margin-bottom:8%;">
+    <div class="row margin-top-max" style="margin-top:8%;">
         
         <div class="col-sm-"></div>
         <div class="col-sm-10">
@@ -265,50 +210,26 @@
         </div>
         <div class="col-sm-1"></div>
     </div>
-    <div class="row">
+    <div class="row margin-top">
         <div class="col-sm-12"> 
-             <p><small style="font-size: 12px;letter-spacing: 1px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci vel natus repudiandae tempora dolorem optio maxime itaque deleniti blanditiis exercitationem facere, libero quod quis officia fugiat impedit, ullam maiores quibusdam.</small></p>
+             <p><small style=" letter-spacing: 1px;">Sustainable businesses are built on good data, we at Gathoni Muchai Investments generate comprehensive up-to-date articles to help you make the best financial and investment desicions. Included are our company reports and announcements.</small></p>
         </div> 
     </div>
-    <div class="row" style="margin-top: 6%;">
-        <div class="col-sm-6">
+    <div class="row margin-top" style="margin-top: 6%;">
+        <div *ngFor="let blog of blogs" class="col-sm-6">
             <div class="article">
                 <div class="vertcent">
-                    <p class="subtitle" style="color: var(--medium);">Tech & innovation</p>
-                    <h3 class="title">Our commitment to low cost tehnological advancement</h3>
-                    <small style="color: var(--medium);font-size: 10px;">Thu, 22 January 2022</small>
+                    <p class="subtitle" style="color: var(--medium);">{{blog.category}}</p>
+                    <h3 class="title">{{blog.title}}</h3>
+                    <small style="color: var(--medium);font-size: 10px;">{{blog.uploaded.toDate() | date}}</small>
                     <hr>
-                    <a href="" class="rmbtn links">Read more</a>
+                    <a [routerLink]= "['/blog', blog.id]" class="rmbtn links">Read more</a>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6">
-            <div>
-                <div class="article2 " >
-                    <div class="vertcent">
-                        <p class="subtitle" style="color: var(--medium);">Investment news</p>
-                        <h3 class="title">How Barclays is affecting trading in the NSE</h3>
-                        <small style="color: var(--medium);font-size: 10px;">Fri, 30 January 2022</small>
-                        <hr>
-                        <a href="" class="rmbtn links">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="article2 ">
-                    <div class="vertcent">
-                        <p class="subtitle" style="color: var(--medium);">Insights</p>
-                        <h3 class="title">Cashless systems in Kenya and how we invest in them</h3>
-                        <small style="color: var(--medium);font-size: 10px;">Tue, 12 January 2022</small>
-                        <hr>
-                        <a href="" class="rmbtn links">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>  
     </div>
 </div> 
-<div class="container-fluid" style="margin-top:6%;">
+<!-- <div class="container-fluid" style="margin-top:6%;">
     <h1 class="subtitle">Featured news</h1>
     <hr>
     <div class="horizontal-scroll" style="margin-bottom: 4%;"> 
@@ -368,22 +289,22 @@
         </a>
         
     </div> 
-</div>
+</div> -->
 <div class="row start" style="padding: 8%;">
     <div class="col-sm-8">
         <h1 class="subtitle tracking-in-expand " style="font-size:1em;color: var(--medium);">Subscribe to our newsletter </h1>
 
-        <h2 class="title">Real time communication made simple. <br> Be updated on all things invesment </h2>
+        <h2 class="title smallFont">Real time communication made simple. <br> Be updated on all things investment </h2>
     </div>
     <div class="col-sm-4">
-        <form>
+        <form  [formGroup]="form" (ngSubmit)="submit()" >
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form5Example2" class="form-control" />
-              <label class="form-label" for="form5Example2">Email address</label>
+              <input type="email" formControlName="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="email">Email address</label>
             </div>          
             <!-- Submit button -->
-            <button type="submit" class="btn btn-custom btn-sm shadow-0">Subscribe</button>
+            <button class="btn btn-custom shadow-0"  [disabled]="form.invalid" type="submit">Subscribe</button>
           </form>
     </div>
 </div><hr style="margin: 0%;"> 
